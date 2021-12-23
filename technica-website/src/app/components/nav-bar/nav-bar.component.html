@@ -1,0 +1,25 @@
+<nav class="navbar" role="navigation" aria-label="main-navigation">
+    <div class="navbar-brand">
+        <a (click)="toggleNavbar()" role="button" class="navbar-burger burger" #navBurger aria-label="menu" aria-expanded="false" >
+            <span aria-hidden="true"></span>    <!--This is the hamburger menu-->
+            <span aria-hidden="true"></span>    <!--These span tags visualize the 3 lines-->
+            <span aria-hidden="true"></span>
+        </a>
+    </div>
+  
+    <div class="navbar-menu" #navMenu>
+        <div class="navbar-start">
+            <div class="navbar-item"><button class="button">Home</button></div>
+            <div class="navbar-item"><button class="button">Evenemnten</button></div>
+            <div class="navbar-item"><button class="button">Praesidium</button></div>
+            <div class="navbar-item"><button class="button">Join</button></div>
+        </div>
+        <div class="navbar-end">
+            <div class="navbar-item"><button class="button">Partners</button></div>
+            <div class="navbar-item"><button class="button">Vacatures</button></div>
+            <div class="navbar-item"><button class="button">Shop</button></div>
+            <div class="navbar-item"><button class="button">Login</button></div>
+        </div>
+    </div>
+</nav>
+<div class="logo"><img #shieldMenu src="../../../assets/images/schild/technica_schild.png"></div>

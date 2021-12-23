@@ -1,0 +1,73 @@
+/* Navbar */
+.navbar { 
+    background-color: #1471b7;
+    height: 70px;
+}
+.navbar-menu { background-color: #1471b7; }
+.navbar-burger { height: 70px; }
+
+/* Buttons */
+a span {
+    color: white;
+    width: 40px;
+    height: 4px;
+    border-radius: 4px;
+}
+
+.button {
+    color: white;
+    background-color: unset;
+    border: 0px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+
+.navbar-start {
+    margin: auto;
+    padding-right: 50px;
+}
+
+.navbar-end {
+    margin: auto;
+    padding-left: 50px;
+}
+
+@media (max-width: 1024px){
+    .navbar-burger {
+        transition: left .6s ease-in-out;
+    }
+
+    .navbar-item {
+        padding: 1px;
+    }
+
+    .navbar-end {
+        padding-left: 0px;
+    }
+}
+
+/* Schild */
+.logo {
+    position: absolute;
+    left: 50%;
+    right: 50%;
+    top: 10px;
+    margin-left: -50px;
+    z-index: 990;
+    transition: all .15s ease;
+}
+.logo:hover {
+    margin-left: -52px;
+}
+
+.logo img {
+    max-width: 100px;
+    transition: all .15s ease;
+}
+.logo img:hover {
+    max-width: 105px;
+}
+
+.logo .is-inactive {
+    display: none;
+}
